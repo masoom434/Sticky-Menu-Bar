@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu Bar</title>
+    <style>
+        #header{
+            text-align:center;
+            color:blue;
+            margin-top: 0px;
+            background-color: cyan;
+            
+        }
+        #logo{
+            width:250px;
+            height:auto;
+        }
+        #menu-bar{
+            text-align:center;
+            background-color:cadetblue;
+        }
+        #menu-bar li{
+            display:inline-block;
+            padding:15px 10px;
+            font-size:18px;
+            font-weight:bold;
+        }
+        .sticky{
+            position:fixed;
+            top:0;
+            width:100%;
+        }
+        #career{
+            background-color: aquamarine;
+        }
+       h1{
+        text-align: center;
+        color:brown;
+        text-decoration:underline;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="original-7c71bfa677e61dea61bc2acd59158d32.webp" id="logo" alt="logo">
+        <h3>Career consultancy </h3>
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>about us</li>
+        <li>courses</li>
+        <li>student kit</li>
+    </nav>
+    <h1>some important Question on career</h1>
+    <div id="career">
+        <p>
+            <h2>Q-1>what is career?</h2>
+            Career is a very important thing in one's life. Whatever career path you choose to follow, it will impact your life greatly. Your career will define your status in a society in addition to your lifestyle. In other words, your career will determine your social circle and relationships.Therefore, it is extremely important to choose the correct career path. From a very young age, we aspire to be something or the other. While someone aims to be a doctor, some wish to become a painter. Our career choices depend on a lot of things. Thus, it is important to consider all factors before choosing a career path.
+            <h2>Q-2>How to choose career?</h2>
+            You must consider a number of factors before deciding on your career. Each factor plays a significant role in your choice. Firstly, always assess yourself thoroughly. You must understand your area of interest to choose a career. For instance, someone who dances well can surely become a doctor, but his interest will always be in dance. Thus, ensure that you have the caliber to perform well in the field you choose. This will come from your area of interest itself.
+            After that, you look for the opportunities available as per your area of interest. Now that you are aware of what you like and dislike, you can easily look for occupations matching your passion. Make a list of the occupations you can get into following your interests. Furthermore, shorten the list you have prepared. You must do so as per what suits you best. Consult with your seniors and parents to make informed decisions.Most importantly, acquire the skills for the career option you are interested in. Ensure you earn the qualifications and degrees for it. Try taking training programs to enhance your skills. This will give you an upper hand in knowing whether you are correct in choosing the specific career plan. Furthermore, create an impressive resume which can help you get the right opportunities.
+            <h2>Q-3>How to Achieve your Career Goal?</h2>
+            There are steps you need to take before achieving your career goal. As they say, success doesn't come overnight. You must work along the way to accomplish your goals. There is always hope if you have the will. Firstly, create profiles on different job portals to attract the employer's attention. When you maintain your profile well, you will be able to get good career opportunities.Moreover, always maintain your network. Build a solid network and create sources in the field. This way you can update yourself with the latest happenings in the industry. In addition, try to attend the related seminars and workshops that happen related to your career choice. You will meet influential people of the same field who can broaden your thinking.In short, always remember to stay determined. You can easily achieve your career goal if you set your mind to it. In other words, people usually distract themselves easily. You must not do so and focus on your career path to achieve your goals efficiently.
+            <h2>Q-4>What is creativity?</h2>
+            creativity is one of those traits that people seem to have an intrinsic understanding of, but if you actually ask them to define it, they get tripped up. It's easy to come up with a list of creative people (Frida Kahlo, Steve Jobs and Steve Wozniak, Einstein), and the outcomes of creativity (a novel, an invention, a new way of looking at the world), but it’s difficult to wrap your head around the actual concept of creativity. The more I researched this article, the more I realized creativity is an incredibly nuanced phenomenon.
+            <h2> Why are some people creative and others are not?</h2>
+            The ones who are not creative are scared of admitting their feelings and don't give them the due importance. They think emotional responses make them weak.People who accept their emotions and vulnerability and harness it create art: a product of imagination and senses.
+            <h2>Q-5>Why do I stay stuck in a situation when I should step out of it and observe it from a distance?></h2>
+            Because staying stuck in a situation is easier than learning from the experience and coming out of the drama. My short-sightedness overpowers my drone view bringing misery to me and to the others around me. I should step aside from the scene and look at it objectively. It would be hard to watch the scene from a distance, but that is the only logical way to decide what is the best action.Do not react act in absolutness.
+            <h2>Q-4>What is Good routine?</h2>
+            A good routine provides time to sleep, eat, care for ourselves physically and mentally, be with relevant people, make a living, do things that bring joy and hope(the last two could be the same), and play. Thus I can balance my physical, spiritual, mental, and earthly well-being every day. I wouldn't have to wake up one day to realize I am unhealthy or bankrupt or disappointed. The order in which I do the daily activities matter, too. Going from the most important tasks to the least important has proven to be the most efficient.But it is best to not compare our routines with others as we all operate differently. I have a detailed article on creating a routine and other small daily habits to follow that have formed the basis of my daily life. 
+         </p>
+    </div>
+    
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar=document.getElementById("menu-bar");
+            if(window.pageYOffset>=191){
+                navbar.classList.add('sticky');
+            }
+            else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+    
+</body>
+</html>
